@@ -1,0 +1,19 @@
+# Ignore node_modules everywhere
+node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore lock files in the root (but not in frontend/ or backend/)
+/package-lock.json
+
+# Ignore OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignore build output (if any)
+dist/
+build/
+
