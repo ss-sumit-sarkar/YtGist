@@ -8,6 +8,7 @@ export async function summarizeWithGemini(prompt) {
       {
         contents: [
           {
+            role: "user",
             parts: [
               { text: prompt }
             ]
@@ -113,6 +114,7 @@ Comments:\n${JSON.stringify(commentsArr)}\n`;
       {
         contents: [
           {
+              role: "user",
             parts: [
               { text: prompt }
             ]
