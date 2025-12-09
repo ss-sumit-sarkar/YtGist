@@ -55,6 +55,7 @@ export async function getCommentAnalysis(req, res) {
     }
 
     const comments = await fetchComments(videoId);
+    comments = comments.slice(0, 200);
 
     const geminiAnalysis = await analyzeCommentsWithGemini(comments);
 
