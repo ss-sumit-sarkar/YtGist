@@ -4,7 +4,7 @@ export async function summarizeWithGemini(prompt) {
   const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
   try {
     const response = await axios.post(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
       {
         contents: [
           {
@@ -109,7 +109,7 @@ You MUST always include the overallSentiment object with exact percentage number
 
 Comments:\n${JSON.stringify(commentsArr)}\n`;
     const response = await axios.post(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
       {
         contents: [
           {
